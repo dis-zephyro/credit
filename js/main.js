@@ -17,7 +17,8 @@ ymaps.ready(init);
 function init () {
     var myMap = new ymaps.Map('map', {
         center: [55.7502,49.1969], // Казань
-        zoom: 16
+        zoom: 16,
+        controls: []
     });
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -44,7 +45,8 @@ function init () {
             myMap.destroy();
             myMap = new ymaps.Map('map', {
                 center: [55.7502,49.1969], // Москва
-                zoom: 16
+                zoom: 16,
+                controls: []
             });
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -67,7 +69,8 @@ function init () {
             myMap.destroy();
             myMap = new ymaps.Map('map', {
                 center: [55.7220,37.5950], // Москва
-                zoom: 16
+                zoom: 16,
+                controls: []
             });
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -90,7 +93,8 @@ function init () {
             myMap.destroy();
             myMap = new ymaps.Map('map', {
                 center: [48.7054,44.5202], // Волгоград
-                zoom: 16
+                zoom: 16,
+                controls: []
             });
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -113,7 +117,8 @@ function init () {
             myMap.destroy();
             myMap = new ymaps.Map('map', {
                 center: [51.6615,39.2003], // Воронеж
-                zoom: 16
+                zoom: 16,
+                controls: []
             });
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
