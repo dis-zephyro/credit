@@ -10,7 +10,6 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet/less" href="css/main.less">
         <script src="js/vendor/less.min.js"></script>
@@ -21,50 +20,240 @@
         <header class="header">
             <div class="container">
                 <div class="header-logo ir"></div>
-                <div class="header-contact">
-                    <div class="phone-title"></div>
-                    <div class="phone"></div>
-                    <a class="btn btn-header popup-form" href="#popup-form">заказ обратного звонка</a>
+                <div class="header-contact clearfix">
+                    <div class="header-phone">8 (800) 700-84-43</div>
+                    <a class="btn-green popup-form" href="#popup-form">Заказать звонок</a>
                 </div>
-                <div class="header-title"></div>
-                <ul class="benefit clerfix">
-                    <li class="item1"></li>
-                    <li class="item2"></li>
-                    <li class="item3"></li>
-                    <li class="item4"></li>
-                </ul>
+                <nav class="topnav">
+                    <ul class="clerfix">
+                        <li class="item1"><a href=""><span>О нас</span></a></li>
+                        <li class="item2 active"><a href=""><span>Услуги</span></a></li>
+                        <li class="item3"><a href=""><span>Фрайчайзинг</span></a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <section class="">
-            <div class="container"></div>
+        <section class="block01">
+            <div class="container">
+                <h1>УЗНАЙТЕ, КАК НЕ ЮРИСТУ ЗАРАБАТЫВАТЬ
+                    <br/>БОЛЕЕ <strong>100 000</strong> РУБЛЕЙ В МЕСЯЦ
+                    <br/>НА УНИКАЛЬНЫХ ЮРИДИЧЕСКИХ УСЛУГАХ!
+                </h1>
+                <div class="form-block">
+                    <div class="form-title">Запишитесь на бесплатную консультацию нашего специалиста</div>
+                    <form enctype="multipart/form-data" method="post" class="cform mini form">
+                        <ol class="cf-ol">
+                            <li>
+                                <label><span></span></label>
+                                <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                            </li>
+                            <li>
+                                <label><span></span></label>
+                                <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                                <span class="reqtxt"></span>
+                            </li>
+                            <li>
+                                <label><span></span></label>
+                                <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш email" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                                <span class="reqtxt"></span>
+                            </li>
+                        </ol>
+                        <p class="cf-sb">
+                            <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать проект" onclick="return cforms_validate('8', false)"/>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block02">
+            <div class="container">
+                <div class="about-text">Франшиза ЗакройКредит – это продуманная бизнес система, когда открыть собственное юридическое агентство может каждый желающий. Узнайте условия уникальной франшизы!</div>
+                <h2>ЕСЛИ ВЫ ЗАШЛИ НА ЭТУ СТРАНИЦУ, ВЫ ОДИН ИЗ ТРЕХ:</h2>
+                <ul class="info-block clearfix">
+                    <li class="item1">
+                        <h4>Вы начинаете свой путь в мире бизнеса и не хотите работать на «дядю»</h4>
+                        <div class="info-hide">
+                            <p>1) Вам надоело жить на маленькую зарплату юриста.</p>
+                            <p>2) Занимаясь юриспруденцией, Вы хотите получать не только опыт, но и солидный заработок.</p>
+                            <p>3) Вам интересно познавать новое знания в активно развивающейся юридической отрасли.</p>
+                        </div>
+                        <a class="btn popup-form" href="#popup-form">Узнать больше</a>
+                    </li>
+                    <li class="item2">
+                        <h4>Вы работаете юристом по найму или у Вас есть юр. образование</h4>
+                        <div class="info-hide">
+                            <p>1) Вам надоело жить на маленькую зарплату юриста.</p>
+                            <p>2) Занимаясь юриспруденцией, Вы хотите получать не только опыт, но и солидный заработок.</p>
+                            <p>3) Вам интересно познавать новое знания в активно развивающейся юридической отрасли.</p>
+                        </div>
+                        <a class="btn popup-form" href="#popup-form">Узнать больше</a>
+                    </li>
+                    <li class="item3">
+                        <h4>Вы работаете юристом по найму или у Вас есть юр. образование</h4>
+                        <div class="info-hide">
+                            <p>1) Вам надоело жить на маленькую зарплату юриста.</p>
+                            <p>2) Занимаясь юриспруденцией, Вы хотите получать не только опыт, но и солидный заработок.</p>
+                            <p>3) Вам интересно познавать новое знания в активно развивающейся юридической отрасли.</p>
+                        </div>
+                        <a class="btn popup-form" href="#popup-form">Узнать больше</a>
+                    </li>
+                </ul>
+                <h2 class="text-green">МЫ УЧЛИ НЕДОСТАТКИ БОЛЬШИНСТВА СУЩЕСТВУЮЩИХ
+                    ФРАНШИЗ И РАЗРАБОТАЛИ СПЕЦИАЛЬНЫЙ ПРОДУКТ,
+                    В КОТОРОМ:
+                </h2>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block03">
+            <div class="container">
+                <div class="step">1</div>
+                <h2>ВАМ ПОНАДОБИТСЯ МЕНЬШЕ 200 000 РУБЛЕЙ НА ОТКРЫТИЕ СОБСТВЕННОГО БИЗНЕСА!</h2>
+                <p class="text">Мы разработали для Вас идеальный план открытия успешного юридического бизнеса с минимальными вложениями. Вы вкладываетесь только в то, что действительно нужно и позволит Вам сразу зарабатывать!</p>
+                <div class="text-center">
+                    <a class="btn white popup-form" href="#popup-form">Узнать больше</a>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block04">
+            <div class="container">
+                <div class="step">2</div>
+                <h2>ВЫ ОКУПИТЕ ВАШИ ВЛОЖЕНИЯ ЗА 3 МЕСЯЦА</h2>
+                <p class="text">На рынке, в котором работает наши компания (услуги по защите должников от банков и коллекторов) существует огромный спрос на наши услуги, который с каждым годом прирастает на 35-50%. В связи с этим к Вам сразу выстроится очередь из клиентов благодаря нашим отработанным рекламным технологиям!</p>
+                <div class="text-center">
+                    <a class="btn popup-form" href="#popup-form">Узнать больше</a>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block05">
+            <div class="container">
+                <div class="step">3</div>
+                <h2>ВАМ НЕ НАДО БЕСПОКОИТСЯ О РЕКЛАМЕ И МАРКЕТИНГЕ, МЫ СДЕЛАЕМ ВСЁ ЗА ВАС!</h2>
+                <p class="text">Вместе с пакетом франшизы Вы получите качественные маркетинговые материалы и уже настроенные рекламные компании, которые будут приносить Вам более 50 потенциальных клиентов в месяц.</p>
+                <div class="text-center">
+                    <a class="btn white popup-form" href="#popup-form">Узнать больше</a>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block06">
+            <div class="container">
+                <div class="step">4</div>
+                <h2 class="text-green">Прибыльный бизнес для каждого</h2>
+                <ul class="promo-block">
+                    <li>
+                        <h4>Вы откроете бизнес, переживающий кризисы и экономические потрясения</h4>
+                        <p>	По статистике Министерства Экономики, финансовые кризисы 1998 и 2008 годов юридические компании не просто благоприятно переживали, но и имели экономический прирост.
+                            А учитывая специфику нашей деятельности, кризисные времена для нас самые "хлебные".</p>
+                    </li>
+                    <li>
+                        <h4>Вы откроете бизнес, переживающий кризисы и экономические потрясения</h4>
+                        <p>	По статистике Министерства Экономики, финансовые кризисы 1998 и 2008 годов юридические компании не просто благоприятно переживали, но и имели экономический прирост.
+                            А учитывая специфику нашей деятельности, кризисные времена для нас самые "хлебные".</p>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a class="btn popup-form" href="#popup-form">Узнать больше</a>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="block07">
+            <div id="bg-video" class="is_overlay">
+                <video id="video" width="100%" height="auto"  autoplay="autoplay" loop="loop" preload="auto">
+                    <source src="video/video-men.mp4">
+                    <source src="video/video-men.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="top"></div>
+            <div class="container">
+                <h2 class="text-green">ПОЛУЧИТЕ ПРЕЗЕНТАЦИЮ С ПОДРОБНЫМИ ЭКОНОМИЧЕСКИМИ РАСЧЕТАМИ ПО ПРОЕКТУ:</h2>
+                <div class="form-block">
+                    <div class="form-title"> Окупаемость всего от <span>2</span> до <span>4</span>  месяцев!</div>
+                    <form enctype="multipart/form-data" method="post" class="cform mini form">
+                        <ol class="cf-ol">
+                            <li>
+                                <label><span></span></label>
+                                <input type="text" name="cf8_field_1" class="single" value="Введите ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/>
+                            </li>
+                        </ol>
+                        <p class="cf-sb">
+                            <input type="submit" name="sendbutton8" class="sendbutton" value="Оставить заявку" onclick="return cforms_validate('8', false)"/>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="block08" id="block08">
+            <div id="map"></div>
+            <div class="top">МЫ здесь</div>
+            <div class="container">
+                <div class="map-nav-block clearfix">
+                    <div class="map-nav-top">
+                        <div class="map-nav-title">А точнее:</div>
+                        <div class="map-nav">
+                            <nav class="address-nav">
+                                <ul>
+                                    <li class="current"><a id="map1" href="#block08">Казань</a></li>
+                                    <li><a id="map2" href="#block08">Москва</a></li>
+                                    <li><a id="map3" href="#block08">Волгоград</a></li>
+                                    <li><a id="map4" href="#block08">Воронеж</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="map-address">
+                        <div id="adr1">
+                            <ul>
+                                <li>г. Казань, ул. Сыртлановой, д56, 0ф. 204</li>
+                                <li>тел.: 8(800) 700-84-43</li>
+                                <li>е-mail: zakroykredit@info.ru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="footer">
-
+            <div class="container">
+                <div class="footer-tel clearfix">
+                    <div class="footer-phone">8 (800) 700-84-43<span>Бесплатная горячая линия</span></div>
+                    <a class="btn-green popup-form" href="#popup-form">Заказать звонок</a>
+                </div>
+                <ul class="contact">
+                    <li>г. Казань, ул. Сыртлановой, д56, 0ф. 204</li>
+                    <li>ИП Архилов Александр Олегович</li>
+                    <li>ИНН 166 018 944 481</li>
+                    <li>ОГРНИП: 314169031700101</li>
+                </ul>
+                <div class="copy">ООО “Бизбренд” - все права защищены</div>
+            </div>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/owl-carousel/owl.carousel.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/main.js"></script>
+
+        <div class="hidden">
+            <div class="form-block" id="popup-form">
+                <div class="form-title">Заказать звонок</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <label><span></span></label>
+                            <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                        </li>
+                        <li>
+                            <label><span></span></label>
+                            <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                            <span class="reqtxt"></span>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать проект" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
+        </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

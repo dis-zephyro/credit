@@ -1,0 +1,134 @@
+// Формы и кнопки
+
+.btn {
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 9px 40px;
+	line-height: 20px;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	color: @color-green;
+	display: inline-block;
+	text-decoration: none;
+	font-family: @font-light;
+	border: 1px solid @color-green;
+	.border-radius(6px);
+
+	&:hover {
+		color: #494949;
+		border-color: #494949;
+	}
+
+	&:active {
+		.box-shadow(inset 0px 1px 3px 0px rgba(0, 0, 0, 0.31));
+	}
+
+	&.white {
+		color: #fff;
+		border-color: #fff;
+
+		&:hover {
+			color: #f9f9f9;
+			border-color: #f9f9f9;
+		}
+	}
+}
+
+.btn-green,
+.sendbutton {
+	top: -1px;
+	color: #fff;
+	width: 225px;
+	height: 44px;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	cursor: pointer;
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+	font-family: @font-light;
+	padding: 6px 10px 8px 10px;
+	background: url("../img/btn-green-bg.png") 0 0 no-repeat;
+
+	&:active {
+		top: 0;
+		position: relative;
+	}
+}
+
+
+.form-block {
+	width: 300px;
+	z-index: 300;
+	padding: 5px 8px;
+	position: relative;
+	border: 1px solid #ffffff;
+	.border-radius(8px);
+	background: rgba(118, 118, 118, .6);
+
+	.form-title {
+		color: #fff;
+		font-size: 24px;
+		line-height: 28px;
+		text-align: center;
+		margin: 0 -5px 18px -5px;
+
+		span {
+			color: @color-green;
+		}
+	}
+}
+
+.cform {
+
+	ol {
+		margin: 0;
+		padding: 0 0 2px 0;
+		list-style: none;
+	}
+
+	li {
+		margin-bottom: 8px;
+		position: relative;
+		text-align: center;
+
+		label {
+			display: none;
+		}
+
+		input[type="text"] {
+			margin: 0;
+			color: #fff;
+			width: 100%;
+			height: 40px;
+			outline: none;
+			display: block;
+			overflow: hidden;
+			font-size: 16px;
+			text-align: left;
+			line-height: 20px;
+			padding: 9px 12px;
+			border: 1px solid #a6a5a4;
+			background: rgba(98, 97, 96, .7);
+			.border-radius(6px);
+
+			&:focus {
+				border-color: @color-green;
+				background: rgba(145, 145, 145, .7);
+			}
+		}
+
+	}
+
+	p {
+		margin-bottom: 3px;
+		text-align: center;
+	}
+}
