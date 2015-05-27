@@ -213,6 +213,7 @@ html {
 }
 body {
   position: relative;
+  padding-top: 103px;
   background: #ffffff url("../img/b2_bg.png") top center;
 }
 .container {
@@ -223,7 +224,13 @@ body {
   position: relative;
 }
 header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: fixed;
   height: 103px;
+  background: #ffffff url("../img/b2_bg.png") top center;
 }
 header .header-logo {
   top: 0;
