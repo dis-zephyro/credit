@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=1024">
+        <meta name="viewport" content="width=1170">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+
+        <!--link rel="stylesheet" href="css/main.css"-->
         <link rel="stylesheet/less" href="css/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -156,12 +158,10 @@
             </div>
         </section>
         <section class="block07">
-            <div id="bg-video" class="is_overlay">
-                <video id="video" width="100%" height="auto"  autoplay="autoplay" loop="loop" preload="auto">
-                    <source src="video/video-men.mp4">
-                    <source src="video/video-men.webm" type="video/webm">
-                </video>
-            </div>
+            <video class="video" id="video" width="100%" height="auto"  autoplay="autoplay" loop="loop" preload="auto">
+                <source src="video/video-men.mp4">
+                <source src="video/video-men.webm" type="video/webm">
+            </video>
             <div class="top"></div>
             <div class="container">
                 <h2 class="text-green">ПОЛУЧИТЕ ПРЕЗЕНТАЦИЮ С ПОДРОБНЫМИ ЭКОНОМИЧЕСКИМИ РАСЧЕТАМИ ПО ПРОЕКТУ:</h2>
@@ -230,6 +230,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <!--script src="js/vendor/detect.min.js"></script-->
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/main.js"></script>
 
@@ -254,15 +255,5 @@
                 </form>
             </div>
         </div>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

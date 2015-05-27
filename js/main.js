@@ -1,3 +1,15 @@
+$(document).ready(function() {
+
+    // Анимация
+    var Android = navigator.userAgent.search(/Android/i);
+    var iPhone = navigator.userAgent.search(/iPhone/i);
+    var iPad = navigator.userAgent.search(/iPad/i);
+    if(Android != -1 || iPhone != -1 || iPad != -1) {
+        $('video').addClass('hidden');
+    } else {}
+});
+
+
 $(function(){
     var mr_input="input[type=text]";
     $(mr_input).each(function() {    $(this).data('stext',$(this).val());                                               });
@@ -9,6 +21,17 @@ $(".popup-form").fancybox({
     "padding" : 0
 });
 
+/*
+var video =  document.getElementById(element);
+video.addEventListener('click',function(){
+    video.play();
+},false);
+
+var ua = detect.parse(navigator.userAgent);
+if ( ua.os.family === 'Android' ) {
+    video.setAttribute( 'controls','controls' );
+}
+*/
 
 // Подключние Яндекс-Карты
 
