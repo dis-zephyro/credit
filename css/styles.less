@@ -324,6 +324,20 @@ ol {
 			display: none;
 		}
 
+		.accordion-off {
+			top: 5px;
+			right: 6px;
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/acc-close.png") 0 0 no-repeat;
+
+			&:hover {
+				background-position: 0 -15px;
+			}
+		}
+
 		&.ui-state-active {
 
 			.accordion-open {

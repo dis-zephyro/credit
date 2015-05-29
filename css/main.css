@@ -360,6 +360,18 @@ ol li {
   border-right: 1px solid transparent;
   display: none;
 }
+.accordion .accordion-title .accordion-off {
+  top: 5px;
+  right: 6px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: absolute;
+  background: url("../img/acc-close.png") 0 0 no-repeat;
+}
+.accordion .accordion-title .accordion-off:hover {
+  background-position: 0 -15px;
+}
 .accordion .accordion-title.ui-state-active .accordion-open {
   display: none;
 }
