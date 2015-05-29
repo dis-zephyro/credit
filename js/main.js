@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Анимация
+    // Проверка на тип устройства
     var Android = navigator.userAgent.search(/Android/i);
     var iPhone = navigator.userAgent.search(/iPhone/i);
     var iPad = navigator.userAgent.search(/iPad/i);
@@ -9,6 +9,7 @@ $(document).ready(function() {
     } else {}
 });
 
+// подсказки для форм (можноу удалить)
 
 $(function(){
     var mr_input="input[type=text]";
@@ -17,21 +18,34 @@ $(function(){
     $(mr_input).blur(function() {    $(this).val().length<=0               ?   $(this).val($(this).data('stext')): "0"; });
 });
 
+// Модальное окно
+
 $(".popup-form").fancybox({
     "padding" : 0
 });
 
-/*
-var video =  document.getElementById(element);
-video.addEventListener('click',function(){
-    video.play();
-},false);
+//  слайдер
 
-var ua = detect.parse(navigator.userAgent);
-if ( ua.os.family === 'Android' ) {
-    video.setAttribute( 'controls','controls' );
-}
-*/
+$('.reply').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
+$('.nav-prev').click(function(){
+    $('.reply').slick('slickPrev');
+});
+
+$('.nav-next').click(function(){
+    $('.reply').slick('slickNext');
+});
+
+// Аккордеон
+
+$(".accordion").accordion({
+    header:'.accordion-title'
+});
 
 // Подключние Яндекс-Карты
 
