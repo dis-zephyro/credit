@@ -989,7 +989,9 @@ header .header-contact .btn-green {
 .block08 .map-nav-block .map-address {
   height: 80px;
   overflow: hidden;
-  padding-top: 5px;
+  padding-top: 12px;
+  padding-left: 20px;
+  font-size: 13px;
 }
 .block08 .map-nav-block .address-nav {
   top: 3px;
@@ -1001,6 +1003,7 @@ header .header-contact .btn-green {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 500;
   padding: 2px 0;
   overflow: hidden;
   position: absolute;
@@ -1039,6 +1042,15 @@ header .header-contact .btn-green {
 }
 .block08 .map-nav-block .address-nav ul:hover li.current {
   background-image: none;
+}
+.block08 .map-nav-block .address-nav .adr {
+  top: 50px;
+  left: -160px;
+  width: 280px;
+  height: 55px;
+  font-size: 13px;
+  line-height: 18px;
+  position: absolute;
 }
 .block09 {
   height: 960px;

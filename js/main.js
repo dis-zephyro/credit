@@ -47,6 +47,9 @@ $(".accordion").accordion({
     header:'.accordion-title'
 });
 
+
+$('.address-nav').tabs();
+
 // Подключние Яндекс-Карты
 
 ymaps.ready(init);
