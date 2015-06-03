@@ -1031,10 +1031,10 @@ header .header-contact .btn-green {
 .block08 .map-nav-block .address-nav ul li:first-child a:hover {
   background-color: transparent;
 }
-.block08 .map-nav-block .address-nav ul li.current {
+.block08 .map-nav-block .address-nav ul li.ui-tabs-active {
   display: block;
 }
-.block08 .map-nav-block .address-nav ul li.current a {
+.block08 .map-nav-block .address-nav ul li.ui-tabs-active a {
   color: #022d00;
 }
 .block08 .map-nav-block .address-nav ul:hover li {
